@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>রেজিস্ট্রেশন ফর্ম</title>
+</head>
+
+<body>
+    <h2>রেজিস্ট্রেশন ফর্ম</h2>
+    <form action="/submit" method="post">
+        <label for="fullname">পূর্ণ নাম:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="email">ইমেইল:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="username">ইউজারনেম:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">পাসওয়ার্ড:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="gender">লিঙ্গ:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required> পুরুষ
+        <input type="radio" id="female" name="gender" value="female"> মহিলা
+        <input type="radio" id="other" name="gender" value="other"> অন্যান্য<br><br>
+
+        <label for="dob">জন্ম তারিখ:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="country">দেশ:</label><br>
+        <select id="country" name="country" required>
+            <option value="">--দেশ নির্বাচন করুন--</option>
+            <option value="bd">বাংলাদেশ</option>
+            <option value="in">ভারত</option>
+            <option value="us">আমেরিকা</option>
+        </select><br><br>
+
+        <label>
+            <input type="checkbox" name="agree" required>
+            আমি শর্তাবলীতে সম্মত
+        </label><br><br>
+
+        <input type="submit" value="রেজিস্টার করুন">
+        <input type="reset" value="রিসেট">
+    </form>
+</body>
+
+</html>
